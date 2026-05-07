@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="M P Darshan — BCA Student, Aspiring Developer & Tech Enthusiast. Portfolio showcasing skills, projects and education.">
+  <title>M P Darshan | Portfolio</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Particle Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Ambient Glows -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="navbar-brand-text">Darshan.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="page-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 order-lg-2 mb-4 mb-lg-0">
+            <div class="hero-photo reveal">
+              <img src="assets/images/profile.jpeg" alt="M P Darshan">
+            </div>
+          </div>
+          <div class="col-lg-7 order-lg-1">
+            <div class="reveal-left">
+              <p class="hero-greeting">👋 Hello, I'm</p>
+              <h1 class="hero-name">M P <span class="gradient-text">Darshan</span></h1>
+              <p class="hero-tagline"><span id="typed-text"></span><span class="typed-cursor">|</span></p>
+              <p class="hero-desc">I am currently pursuing my BCA and exploring areas like programming, AI. I enjoy learning new technologies and applying them in practical projects. I believe in continuous learning and improving my skills every day to build a strong career in the tech industry.</p>
+              <div class="hero-buttons">
+                <a href="assets/resume/resume.jpeg" target="_blank" class="btn-primary-custom">
+                  <i class="bi bi-eye"></i> View Resume
+                </a>
+                <a href="assets/resume/resume.jpeg" download="Darshan_Resume" class="btn-outline-custom">
+                  <i class="bi bi-download"></i> Download Resume
+                </a>
+                <a href="pages/contact.html" class="btn-outline-custom">
+                  <i class="bi bi-envelope"></i> Contact Me
+                </a>
+              </div>
+              <div class="hero-social">
+                <a href="mailto:darshandevanga631@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                <a href="tel:+919353750095" title="Phone"><i class="bi bi-telephone-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick About Section -->
+    <section class="section" id="quick-about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="glass-card reveal" style="text-align:center;">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="stat-card">
+                    <div class="stat-number" data-count="3" data-suffix="+">0</div>
+                    <div class="stat-label">Programming Languages</div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="stat-card">
+                    <div class="stat-number" data-count="2026">0</div>
+                    <div class="stat-label">Expected Graduation</div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="stat-card">
+                    <div class="stat-number" data-count="2" data-suffix="+">0</div>
+                    <div class="stat-label">Languages Spoken</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Preview -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <h2 class="section-title reveal">Core Skills</h2>
+        <div class="section-line reveal"></div>
+        <div class="d-flex flex-wrap justify-content-center gap-3 reveal">
+          <span class="skill-tag"><i class="bi bi-code-slash"></i> C Programming</span>
+          <span class="skill-tag"><i class="bi bi-filetype-py"></i> Python</span>
+          <span class="skill-tag"><i class="bi bi-cup-hot"></i> Java</span>
+          <span class="skill-tag"><i class="bi bi-calendar-event"></i> Event Management</span>
+          <span class="skill-tag"><i class="bi bi-camera"></i> Professional Photography</span>
+          <span class="skill-tag"><i class="bi bi-chat-dots"></i> Communication</span>
+          <span class="skill-tag"><i class="bi bi-people"></i> Teamwork</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">Darshan.</div>
+          <p class="footer-text">BCA Student | Aspiring Developer<br>Tumkur University</p>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="text-white mb-3">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/projects.html">Projects</a></li>
+            <li><a href="pages/education.html">Education</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="text-white mb-3">Get In Touch</h6>
+          <p class="footer-text"><i class="bi bi-envelope me-2"></i>darshandevanga631@gmail.com</p>
+          <p class="footer-text"><i class="bi bi-geo-alt me-2"></i>Tiptur</p>
+          <div class="footer-social mt-3">
+            <a href="mailto:darshandevanga631@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+            <a href="tel:+919353750095"><i class="bi bi-telephone-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 M P Darshan. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scroll-top-btn"><i class="bi bi-chevron-up"></i></button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
